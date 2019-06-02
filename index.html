@@ -83,7 +83,7 @@ body{
 						<li><a href="">item5</a></li>
 					</ul>
 				</li>
-			<li><a id="contacts" href="#content">contacts</a></li>
+			<li><a id="contacts" href="">contacts</a></li>
 			<li><a id="main" href="">main</a></li>
 			<li><a href="">item1</a></li>
 			<li><a href="">item1</a></li>
@@ -104,7 +104,18 @@ body{
              }
 		});
 		});*/
-            $('#contacts').click(function(){  
+            
+		$('#contacts').click(function(){  
+                $.ajax({  
+                    url: "page1.html",  
+                    cache: false,  
+                    success: function(html){  
+                        $("#content").html(html);  
+                    }  
+                });  
+            });  
+		
+		$('#main').click(function(){  
                 $.ajax({  
                     url: "page2.html",  
                     cache: false,  
