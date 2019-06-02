@@ -95,15 +95,15 @@ body{
 	    
         $(document).ready(function(){  
           $('#main').click(function(e){
-e.preventDefault();//отменяем действие ссылки по умолчанию
-$.ajax({
-  type: "POST",
-  url: 'page1.html',
-  success: function(data) {
-             $('#content').html(data);
+		e.preventDefault();//отменяем действие ссылки по умолчанию
+		$.ajax({
+  			type: "GET",
+ 			 url: 'page1.html',
+  			success: function(data) {
+         	    $('#content').html(data);
              }
-});
-});
+		});
+		});
             $('#contacts').click(function(){  
                 $.ajax({  
                     url: "page1.html",  
