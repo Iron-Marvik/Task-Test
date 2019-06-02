@@ -104,8 +104,12 @@ body{
              }
 		});
 		});*/
-            
-		$('#contacts').click(function(){  
+           
+    $('#contacts').click(function(){      // вешаем на клик по элементу с id = example-1
+        $('#content').load('ajax/page1.html'); // загрузку HTML кода из файла example.html               
+    }) 
+
+		/*$('#contacts').click(function(){  
                 $.ajax({  
                     url: "page1.html",  
                     cache: false,  
@@ -126,7 +130,7 @@ body{
             });  
               
             
-              
+              */
         });  
     </script>  
 </body>
