@@ -98,6 +98,17 @@ body{
 		e.preventDefault();//отменяем действие ссылки по умолчанию
 		$.ajax({
   			type: "GET",
+ 			 url: 'page2.html',
+  			success: function(data) {
+         	    $('#content').html(data);
+             }
+		});
+		});
+		
+		$('#contacts').click(function(e){
+		e.preventDefault();//отменяем действие ссылки по умолчанию
+		$.ajax({
+  			type: "GET",
  			 url: 'page1.html',
   			success: function(data) {
          	    $('#content').html(data);
