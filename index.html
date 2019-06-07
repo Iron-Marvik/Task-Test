@@ -94,7 +94,7 @@ body{
     <script>  
 	    
         $(document).ready(function(){  
-         /* $('#main').click(function(e){
+         $('#main').click(function(e){
 		e.preventDefault();//отменяем действие ссылки по умолчанию
 		$.ajax({
   			type: "GET",
@@ -103,11 +103,7 @@ body{
          	    $('#content').html(data);
              }
 		});
-		});*/
-           
-    $('#contacts').click(function(){      // вешаем на клик по элементу с id = example-1
-        $('#content').load('page1.html'); // загрузку HTML кода из файла example.html               
-    });
+		});
 
 		/*$('#contacts').click(function(){  
                 $.ajax({  
